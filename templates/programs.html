@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs</title>
+    <link rel="stylesheet" href="../static/css/bootstrap.css">
+</head>
+<body>
+    <h2 class="text-center">User Prac Programs</h2>
+    <section class="row">
+        <div class="col-md-4">
+            <h3 class="text-center"> USD - KES Converter </h3>
+            <form action="/converter" method="post">
+                <fieldset>
+                    <label for="amt"> Enter Your Amount </label> <br>
+                    <input type="text" name="amt" placeholder="Amt in Kshs." class="form-control" > <br><br>
+
+                    <input type="submit" value="USD" class="btn btn-success"> <br>
+                    <b>The answer is: {{your_value}}</b>
+                </fieldset>
+            </form>
+        </div>
+
+
+        <div class="col-md-4">
+            <h3 class="text-center">BMI Calculator</h3>
+            <form action="/bmi" method="post">
+                <label for="weight"> Enter weight </label> <br>
+                <input type="text" name="weight" placeholder="Weight: " class="form-control"> <br>
+
+                <label for="height"> Enter height </label>
+                <input type="text" name="height" placeholder="Height: " class="form-control"> <br>
+
+                <input type="submit" value="BMI" class="btn btn-success">
+                <br>
+
+                <b>Your BMI is: {{actual_bmi}}</b> 
+            </form>
+
+        </div>
+
+        <div class="col-md-4">
+            <h3 class="text-center">Volume of Sphere</h3>
+            <form action="/volume" method="post">
+                <label for="radius">Enter radius</label> <br>
+                <input type="text" name="radius" placeholder="Enter radius;" class="form-control"> <br>
+                <input type="submit" value="Volume" class="btn btn-success"> <br>
+
+                <b>Volume of Sphere: {{volume_sphere}}</b>
+
+
+            </form>
+
+
+        </div>
+
+    </section>
+
+
+    
+    
+</body>
+</html>
